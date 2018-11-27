@@ -1,9 +1,9 @@
 TMPDIR=/tmp
-for lang in ../*; do
-	if [[ ! -d $lang ]]; then
+for lang in ca cy de fr kab ky ; do
+	if [[ ! -d ../$lang ]]; then
 		continue	
 	fi
-	lang=$(basename "$lang")
+	echo $lang
 	echo -n "" > $TMPDIR/$lang.dat
 	wer_baseline=$(cat ../$lang/LOG.$lang.scratch | grep 'Test - ' | grep -o 'WER:[^,]\+' | cut -f2 -d':' | sed 's/ *//g'); 
 	cer_baseline=$(cat ../$lang/LOG.$lang.scratch | grep 'Test - ' | grep -o 'CER:[^,]\+' | cut -f2 -d':' | sed 's/ *//g');
@@ -16,3 +16,5 @@ for lang in ../*; do
 	cat results.gnu | sed "s/%LANG%/$lang/g" > $TMPDIR/$lang.gnu
 	gnuplot $TMPDIR/$lang.gnu
 done
+
+pdfjoin --nup 2x3 /tmp/*.pdf -o ../graphics/results.pdf
