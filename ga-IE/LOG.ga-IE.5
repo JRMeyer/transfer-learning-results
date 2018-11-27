@@ -1,0 +1,238 @@
+[2018-11-27 21:09:47][0.00] Running script (process 0.0)...
+[2018-11-27 21:09:51][0.00] filter_train_dev_test.py:67: SettingWithCopyWarning: 
+[2018-11-27 21:09:51][0.00] A value is trying to be set on a copy of a slice from a DataFrame.
+[2018-11-27 21:09:51][0.00] Try using .loc[row_indexer,col_indexer] = value instead
+[2018-11-27 21:09:51][0.00] 
+[2018-11-27 21:09:51][0.00] See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+[2018-11-27 21:09:51][0.00]   locale['ID'] = locale['path'].str.split('/', expand = True)[0]
+[2018-11-27 21:09:51][0.00] filter_train_dev_test.py:96: SettingWithCopyWarning: 
+[2018-11-27 21:09:51][0.00] A value is trying to be set on a copy of a slice from a DataFrame.
+[2018-11-27 21:09:51][0.00] Try using .loc[row_indexer,col_indexer] = value instead
+[2018-11-27 21:09:51][0.00] 
+[2018-11-27 21:09:51][0.00] See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+[2018-11-27 21:09:51][0.00]   locale['new_bucket']=locale['ID'].map(speaker_counts.set_index('ID')['new_bucket'])
+[2018-11-27 21:09:51][0.00] filter_train_dev_test.py:99: SettingWithCopyWarning: 
+[2018-11-27 21:09:51][0.00] A value is trying to be set on a copy of a slice from a DataFrame.
+[2018-11-27 21:09:51][0.00] Try using .loc[row_indexer,col_indexer] = value instead
+[2018-11-27 21:09:51][0.00] 
+[2018-11-27 21:09:51][0.00] See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+[2018-11-27 21:09:51][0.00]   locale['path'] = locale['path'].str.replace('/', '___')
+[2018-11-27 21:09:51][0.00] filter_train_dev_test.py:100: SettingWithCopyWarning: 
+[2018-11-27 21:09:51][0.00] A value is trying to be set on a copy of a slice from a DataFrame.
+[2018-11-27 21:09:51][0.00] Try using .loc[row_indexer,col_indexer] = value instead
+[2018-11-27 21:09:51][0.00] 
+[2018-11-27 21:09:51][0.00] See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+[2018-11-27 21:09:51][0.00]   locale['path'] = locale['path'].str.replace('mp3', 'wav')
+[2018-11-27 21:09:51][0.00] Looking for clips.tsv here:  /snakepit/shared/data/mozilla/CommonVoice/v2.0-alpha1.0/clips.tsv
+[2018-11-27 21:09:51][0.00] Found the following languages / number of clips:
+[2018-11-27 21:09:51][0.00] en       576398
+[2018-11-27 21:09:51][0.00] de        36518
+[2018-11-27 21:09:51][0.00] ca        36339
+[2018-11-27 21:09:51][0.00] fr        34519
+[2018-11-27 21:09:51][0.00] zh-TW     26271
+[2018-11-27 21:09:51][0.00] kab       14883
+[2018-11-27 21:09:51][0.00] tr         4377
+[2018-11-27 21:09:51][0.00] tt         4072
+[2018-11-27 21:09:51][0.00] it         2335
+[2018-11-27 21:09:51][0.00] cy         1786
+[2018-11-27 21:09:51][0.00] cv         1320
+[2018-11-27 21:09:51][0.00] ky         1050
+[2018-11-27 21:09:51][0.00] br          688
+[2018-11-27 21:09:51][0.00] sl          413
+[2018-11-27 21:09:51][0.00] ga-IE       325
+[2018-11-27 21:09:51][0.00] Name: locale, dtype: int64
+[2018-11-27 21:09:51][0.00] ###############################################
+[2018-11-27 21:09:51][0.00] FILTERED CLIPS FOR THE LANGUAGE:  ga-IE
+[2018-11-27 21:09:51][0.00] Num validated clips to be used in DEV:  17
+[2018-11-27 21:09:51][0.00] Num validated clips to be used in TEST:  42
+[2018-11-27 21:09:51][0.00] Num validated clips to be used in TRAIN:  143
+[2018-11-27 21:09:51][0.00] ###############################################
+[2018-11-27 21:09:52][0.00] ### Reading in the following transcript files: ###
+[2018-11-27 21:09:52][0.00] ['../keep/ga-IE/valid_dev.csv', '../keep/ga-IE/valid_train.csv', '../keep/ga-IE/valid_test.csv']
+[2018-11-27 21:09:52][0.00] ### The following unique characters were found in your transcripts: ###
+[2018-11-27 21:09:52][0.00] ['L', 'r', 'l', 'ú', ' ', 'O', 'a', 'm', 'h', 'n', 'A', ',', 'u', '*', '?', 'd', 't', 'G', '’', 'D', 'N', '-', 'b', 'É', 'F', 'v', 'B', 'M', 'P', 'C', 'Ó', 'i', 'g', 'í', 'c', 'á', '.', 'H', "'", 'o', 'w', 'y', 'f', 'p', 'é', 'Á', 's', 'ó', 'R', 'U', 'T', 'S', 'I', 'e']
+[2018-11-27 21:09:52][0.00] ### All these characters should be in your data/alphabet.txt file ###
+[2018-11-27 21:10:07][0.00] Preprocessing ['../keep/ga-IE/valid_dev.csv']
+[2018-11-27 21:10:08][0.00] Preprocessing done
+[2018-11-27 21:10:08][0.00] Preprocessing ['../keep/ga-IE/valid_train.csv']
+[2018-11-27 21:10:16][0.00] Preprocessing done
+[2018-11-27 21:10:26][0.00] Initializing from ../keep/en
+[2018-11-27 21:10:26][0.00] Loading global_step
+[2018-11-27 21:10:26][0.00] Loading b1
+[2018-11-27 21:10:26][0.00] Loading h1
+[2018-11-27 21:10:26][0.00] Loading beta1_power
+[2018-11-27 21:10:42][0.00] I STARTING Optimization
+[2018-11-27 21:10:44][0.00] I Training epoch 250473...
+[2018-11-27 21:10:44][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250473 - loss: 517.038574
+[2018-11-27 21:10:44][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:10:44][0.00] I Validating epoch 250473...
+[2018-11-27 21:10:47][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250473 - loss: 401.212987
+[2018-11-27 21:10:47][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:10:48][0.00] I Training epoch 250474...
+[2018-11-27 21:10:48][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250474 - loss: 445.970612
+[2018-11-27 21:10:48][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:10:48][0.00] I Validating epoch 250474...
+[2018-11-27 21:10:52][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250474 - loss: 283.046061
+[2018-11-27 21:10:52][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:03 Time:  0:00:03
+[2018-11-27 21:10:52][0.00] I Training epoch 250475...
+[2018-11-27 21:10:52][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250475 - loss: 296.232941
+[2018-11-27 21:10:52][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:10:52][0.00] I Validating epoch 250475...
+[2018-11-27 21:10:54][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Validation of Epoch 250475 - loss: 111.322599
+[2018-11-27 21:10:54][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:01 Time:  0:00:01
+[2018-11-27 21:10:54][0.00] I Training epoch 250476...
+[2018-11-27 21:10:54][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250476 - loss: 191.860596
+[2018-11-27 21:10:54][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:10:54][0.00] I Validating epoch 250476...
+[2018-11-27 21:10:57][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250476 - loss: 142.183695
+[2018-11-27 21:10:57][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:10:57][0.00] I Training epoch 250477...
+[2018-11-27 21:10:57][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250477 - loss: 128.756912
+[2018-11-27 21:10:57][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:10:57][0.00] I Validating epoch 250477...
+[2018-11-27 21:11:00][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250477 - loss: 179.591479
+[2018-11-27 21:11:00][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:11:00][0.00] I Training epoch 250478...
+[2018-11-27 21:11:00][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250478 - loss: 210.915237
+[2018-11-27 21:11:00][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:11:00][0.00] I Validating epoch 250478...
+[2018-11-27 21:11:03][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250478 - loss: 198.957120
+[2018-11-27 21:11:03][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:11:03][0.00] I Training epoch 250479...
+[2018-11-27 21:11:03][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250479 - loss: 202.256470
+[2018-11-27 21:11:03][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:11:03][0.00] I Validating epoch 250479...
+[2018-11-27 21:11:06][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250479 - loss: 198.392850
+[2018-11-27 21:11:06][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:11:06][0.00] I Training epoch 250480...
+[2018-11-27 21:11:06][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250480 - loss: 206.270554
+[2018-11-27 21:11:06][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:11:06][0.00] I Validating epoch 250480...
+[2018-11-27 21:11:09][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250480 - loss: 179.374148
+[2018-11-27 21:11:09][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:11:09][0.00] I Training epoch 250481...
+[2018-11-27 21:11:09][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250481 - loss: 213.199814
+[2018-11-27 21:11:09][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:11:09][0.00] I Validating epoch 250481...
+[2018-11-27 21:11:12][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250481 - loss: 149.932752
+[2018-11-27 21:11:12][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:11:12][0.00] I Training epoch 250482...
+[2018-11-27 21:11:12][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250482 - loss: 142.679306
+[2018-11-27 21:11:12][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:11:12][0.00] I Validating epoch 250482...
+[2018-11-27 21:11:15][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250482 - loss: 123.325483
+[2018-11-27 21:11:15][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:11:15][0.00] I Training epoch 250483...
+[2018-11-27 21:11:15][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250483 - loss: 116.049683
+[2018-11-27 21:11:15][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:11:15][0.00] I Validating epoch 250483...
+[2018-11-27 21:11:18][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250483 - loss: 121.162425
+[2018-11-27 21:11:18][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:11:18][0.00] I Training epoch 250484...
+[2018-11-27 21:11:18][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250484 - loss: 108.842995
+[2018-11-27 21:11:18][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:11:18][0.00] I Validating epoch 250484...
+[2018-11-27 21:11:20][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250484 - loss: 146.240771
+[2018-11-27 21:11:20][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:11:20][0.00] I Training epoch 250485...
+[2018-11-27 21:11:21][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250485 - loss: 120.273506
+[2018-11-27 21:11:21][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:11:21][0.00] I Validating epoch 250485...
+[2018-11-27 21:11:23][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250485 - loss: 155.716382
+[2018-11-27 21:11:23][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:11:23][0.00] I Training epoch 250486...
+[2018-11-27 21:11:24][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250486 - loss: 124.697754
+[2018-11-27 21:11:24][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:11:24][0.00] I Validating epoch 250486...
+[2018-11-27 21:11:26][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250486 - loss: 142.978467
+[2018-11-27 21:11:26][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:11:26][0.00] I Training epoch 250487...
+[2018-11-27 21:11:27][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250487 - loss: 117.192474
+[2018-11-27 21:11:27][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:11:27][0.00] I Validating epoch 250487...
+[2018-11-27 21:11:29][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250487 - loss: 124.146594
+[2018-11-27 21:11:29][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:11:29][0.00] I Training epoch 250488...
+[2018-11-27 21:11:29][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250488 - loss: 104.986603
+[2018-11-27 21:11:29][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:11:29][0.00] I Validating epoch 250488...
+[2018-11-27 21:11:32][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250488 - loss: 114.192596
+[2018-11-27 21:11:32][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:11:32][0.00] I Training epoch 250489...
+[2018-11-27 21:11:32][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250489 - loss: 97.859535
+[2018-11-27 21:11:32][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:11:32][0.00] I Validating epoch 250489...
+[2018-11-27 21:11:35][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250489 - loss: 112.721695
+[2018-11-27 21:11:35][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:11:35][0.00] I Training epoch 250490...
+[2018-11-27 21:11:35][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250490 - loss: 105.283081
+[2018-11-27 21:11:35][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:11:35][0.00] I Validating epoch 250490...
+[2018-11-27 21:11:38][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250490 - loss: 114.770330
+[2018-11-27 21:11:38][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:11:38][0.00] I Training epoch 250491...
+[2018-11-27 21:11:38][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250491 - loss: 106.058693
+[2018-11-27 21:11:38][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:11:38][0.00] I Validating epoch 250491...
+[2018-11-27 21:11:40][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250491 - loss: 116.316447
+[2018-11-27 21:11:40][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:11:41][0.00] I Training epoch 250492...
+[2018-11-27 21:11:41][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250492 - loss: 107.043098
+[2018-11-27 21:11:41][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:11:41][0.00] I Validating epoch 250492...
+[2018-11-27 21:11:43][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250492 - loss: 115.883148
+[2018-11-27 21:11:43][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:11:43][0.00] I Training epoch 250493...
+[2018-11-27 21:11:44][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250493 - loss: 107.390381
+[2018-11-27 21:11:44][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:11:44][0.00] I Validating epoch 250493...
+[2018-11-27 21:11:46][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250493 - loss: 114.399930
+[2018-11-27 21:11:46][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:11:46][0.00] I Training epoch 250494...
+[2018-11-27 21:11:46][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250494 - loss: 104.661400
+[2018-11-27 21:11:46][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:11:46][0.00] I Validating epoch 250494...
+[2018-11-27 21:11:49][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250494 - loss: 113.351982
+[2018-11-27 21:11:49][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:11:49][0.00] I Training epoch 250495...
+[2018-11-27 21:11:49][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250495 - loss: 91.333984
+[2018-11-27 21:11:49][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:11:49][0.00] I Validating epoch 250495...
+[2018-11-27 21:11:52][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250495 - loss: 114.800067
+[2018-11-27 21:11:52][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:11:52][0.00] I Training epoch 250496...
+[2018-11-27 21:11:52][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250496 - loss: 110.429962
+[2018-11-27 21:11:52][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:11:52][0.00] I Validating epoch 250496...
+[2018-11-27 21:11:55][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250496 - loss: 118.938675
+[2018-11-27 21:11:55][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:02 Time:  0:00:02
+[2018-11-27 21:11:55][0.00] I Training epoch 250497...
+[2018-11-27 21:11:55][0.00]                                                                                N/A% (0 of 1) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                               100% (1 of 1) |##########################| Elapsed Time: 0:00:00 ETA:  00:00:00                                                                               I Training of Epoch 250497 - loss: 99.824982
+[2018-11-27 21:11:55][0.00] 100% (1 of 1) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+[2018-11-27 21:11:55][0.00] I Validating epoch 250497...
+[2018-11-27 21:11:57][0.00]                                                                                N/A% (0 of 3) |                          | Elapsed Time: 0:00:00 ETA:  --:--:--                                                                                33% (1 of 3) |########                  | Elapsed Time: 0:00:00 ETA:  00:00:00                                                                                66% (2 of 3) |#################         | Elapsed Time: 0:00:00 ETA:   0:00:00                                                                               100% (3 of 3) |##########################| Elapsed Time: 0:00:01 ETA:  00:00:00                                                                               I Validation of Epoch 250497 - loss: 122.795883
+[2018-11-27 21:11:57][0.00] I Early stop triggered as (for last 10 steps) validation loss: 122.795883 with standard deviation: 1.732752 and mean: 115.041652
+[2018-11-27 21:11:57][0.00] I FINISHED Optimization - training time: 0:01:14
+[2018-11-27 21:11:57][0.00] 100% (3 of 3) |##########################| Elapsed Time: 0:00:01 Time:  0:00:01
+[2018-11-27 21:12:01][0.00] Preprocessing ['../keep/ga-IE/valid_test.csv']
+[2018-11-27 21:12:02][0.00] Preprocessing done
+[2018-11-27 21:12:05][0.00] Computing acoustic model predictions...
+[2018-11-27 21:12:05][0.00]                                                                                / |#                                                  | 0 Elapsed Time: 0:00:00                                                                               - |#                                                  | 0 Elapsed Time: 0:00:00
+[2018-11-27 21:12:05][0.00] Decoding predictions...
+[2018-11-27 21:12:05][0.00]                                                                                / |#                                                  | 0 Elapsed Time: 0:00:00                                                                               - |#                                                  | 0 Elapsed Time: 0:00:00
+[2018-11-27 21:12:05][0.00] Traceback (most recent call last):
+[2018-11-27 21:12:05][0.00]   File "DeepSpeech.py", line 994, in <module>
+[2018-11-27 21:12:05][0.00]     tf.app.run(main)
+[2018-11-27 21:12:05][0.00]   File "/snakepit/jobs/3015/tmp/venv/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 125, in run
+[2018-11-27 21:12:05][0.00]     _sys.exit(main(argv))
+[2018-11-27 21:12:05][0.00]   File "DeepSpeech.py", line 950, in main
+[2018-11-27 21:12:05][0.00]     test()
+[2018-11-27 21:12:05][0.00]   File "DeepSpeech.py", line 712, in test
+[2018-11-27 21:12:05][0.00]     evaluate.evaluate(test_data, graph, Config.alphabet)
+[2018-11-27 21:12:05][0.00]   File "/snakepit/jobs/3015/src/evaluate.py", line 186, in evaluate
+[2018-11-27 21:12:05][0.00]     wer, samples = calculate_report(ground_truths, predictions, distances, losses)
+[2018-11-27 21:12:05][0.00]   File "/snakepit/jobs/3015/src/evaluate.py", line 74, in calculate_report
+[2018-11-27 21:12:05][0.00]     samples_wer = total_levenshtein / total_label_length
+[2018-11-27 21:12:05][0.00] ZeroDivisionError: division by zero
+[2018-11-27 21:12:07][0.00] .compute: END
+[2018-11-27 21:12:07][0.00] Finished script (process 0.0).
