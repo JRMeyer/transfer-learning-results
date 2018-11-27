@@ -1,5 +1,5 @@
 TMPDIR=/tmp
-for lang in br ca cy de fr kab ky ; do
+for lang in br ca cy de fr kab ky tt ; do
 	if [[ ! -d ../$lang ]]; then
 		continue	
 	fi
@@ -17,4 +17,5 @@ for lang in br ca cy de fr kab ky ; do
 	gnuplot $TMPDIR/$lang.gnu
 done
 
-pdfjoin --nup 2x4 /tmp/*.pdf -o ../graphics/results.pdf
+pdfjoin --nup 2x4 /tmp/*.cer.pdf -o ../graphics/results.cer.pdf
+pdfjoin --nup 2x4 /tmp/*.wer.pdf -o ../graphics/results.wer.pdf
