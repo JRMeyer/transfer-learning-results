@@ -1,5 +1,5 @@
 TMPDIR=/tmp
-for lang in br ca cy de fr it kab ky tt tr ; do
+for lang in br ca cy cv de fr it kab ky tt tr ; do
 	if [[ ! -d ../$lang ]]; then
 		continue	
 	fi
