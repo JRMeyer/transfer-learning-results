@@ -1,8 +1,8 @@
 TMPDIR=/tmp
 for lang in br ca cy cv de fr it kab ky tt tr ; do
-	if [[ ! -d ../$lang ]]; then
-		continue	
-	fi
+	# if [[ ! -d ../$lang ]]; then
+	# 	continue	
+	# fi
 	echo $lang
 	echo -n "" > $TMPDIR/$lang.dat
 	wer_baseline=$(cat ../$lang/LOG.$lang.scratch | grep 'Test - ' | grep -o 'WER:[^,]\+' | cut -f2 -d':' | sed 's/ *//g'); 
