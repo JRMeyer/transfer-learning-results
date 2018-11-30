@@ -15,8 +15,8 @@ langs=df.iloc[:,0]
 
 
 
-plt.bar(x,y, width=1/5)
+plt.bar(x,y, width=1/4)
 plt.xticks(x, langs)
-plt.xlabel("LOG( Number of clips in TRAIN set )")
+plt.xlabel("LOG( Number of speakers in TRAIN set )")
 plt.ylabel("Improvement of Transfer, aka (Best Transfer CER - Baseline CER)")
 plt.show()
