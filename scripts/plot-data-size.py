@@ -7,9 +7,13 @@ sorted_data=sys.argv[1]
 
 df= pd.read_csv(sorted_data,delimiter='\t',header=None)
 
-x=df.iloc[:,5].apply(np.log)
+print(df)
+
+x=df.iloc[:,7].apply(np.log)
 y=df.iloc[:,4]
 langs=df.iloc[:,0]
+
+
 
 plt.bar(x,y, width=1/5)
 plt.xticks(x, langs)
