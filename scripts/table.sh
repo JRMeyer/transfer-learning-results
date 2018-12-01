@@ -15,7 +15,8 @@ for lang in br ca cy cv de fr it kab ky tt tr ; do
 	wer_baseline=$(cat ../$lang/LOG.$lang.scratch | grep 'Test - ' | grep -o 'WER:[^,]\+' | cut -f2 -d':' | sed 's/ *//g'); 
 	cer_baseline=$(cat ../$lang/LOG.$lang.scratch | grep 'Test - ' | grep -o 'CER:[^,]\+' | cut -f2 -d':' | sed 's/ *//g');
     row="$lang & $(round $cer_baseline)"
-	for model in 1 2 3 4 5; do
+	# for model in 1 2 3 4 5; do
+	for model in 5 4 3 2 1; do
 		wer=$(cat ../$lang/LOG.$lang.$model | grep 'Test - ' | grep -o 'WER:[^,]\+' | cut -f2 -d':' | sed 's/ *//g');
 		cer=$(cat ../$lang/LOG.$lang.$model | grep 'Test - ' | grep -o 'CER:[^,]\+' | cut -f2 -d':' | sed 's/ *//g');
         row="$row & $(round $cer)" 
