@@ -22,4 +22,12 @@ for results, num in [(scratch, 'scratch'), (one, 'one'), (two, 'two'), (three, '
 
 
 
-print(master)
+for key, value in master.items():
+    if len(value) == 6:
+        print("src:\t\t", key)
+        for i in (master[key]):
+            if i == "scratch":
+                print(i, ":\t", master[key][i])
+            else:
+                print(i, ":\t\t", master[key][i])
+        print("####")
