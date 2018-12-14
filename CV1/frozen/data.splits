@@ -1,0 +1,52 @@
+br/LOG.br.scratch
+[2018-11-27 02:22:36][0.00] Num validated clips to be used in DEV:  53
+[2018-11-27 02:22:36][0.00] Num validated clips to be used in TEST:  108
+[2018-11-27 02:22:36][0.00] Num validated clips to be used in TRAIN:  512
+ca/LOG.ca.scratch
+[2018-11-28 19:44:15][0.00] Num validated clips to be used in DEV:  2376
+[2018-11-28 19:44:15][0.00] Num validated clips to be used in TEST:  2381
+[2018-11-28 19:44:15][0.00] Num validated clips to be used in TRAIN:  19168
+cv/LOG.cv.scratch
+[2018-11-27 23:09:59][0.00] Num validated clips to be used in DEV:  126
+[2018-11-27 23:09:59][0.00] Num validated clips to be used in TEST:  122
+[2018-11-27 23:09:59][0.00] Num validated clips to be used in TRAIN:  955
+cy/LOG.cy.scratch
+[2018-11-27 00:59:53][0.00] Num validated clips to be used in DEV:  75
+[2018-11-27 00:59:53][0.00] Num validated clips to be used in TEST:  60
+[2018-11-27 00:59:53][0.00] Num validated clips to be used in TRAIN:  333
+de/LOG.de.scratch
+[2018-11-28 19:30:32][0.00] Num validated clips to be used in DEV:  3496
+[2018-11-28 19:30:32][0.00] Num validated clips to be used in TEST:  3309
+[2018-11-28 19:30:32][0.00] Num validated clips to be used in TRAIN:  28093
+fr/LOG.fr.scratch
+[2018-11-28 19:02:48][0.00] Num validated clips to be used in DEV:  3144
+[2018-11-28 19:02:49][0.00] Num validated clips to be used in TEST:  3054
+[2018-11-28 19:02:49][0.00] Num validated clips to be used in TRAIN:  26102
+ga-IE/LOG.ga-IE.scratch
+[2018-11-27 20:57:05][0.00] Num validated clips to be used in DEV:  17
+[2018-11-27 20:57:05][0.00] Num validated clips to be used in TEST:  42
+[2018-11-27 20:57:05][0.00] Num validated clips to be used in TRAIN:  143
+it/LOG.it.scratch
+[2018-11-27 18:55:33][0.00] Num validated clips to be used in DEV:  229
+[2018-11-27 18:55:33][0.00] Num validated clips to be used in TEST:  213
+[2018-11-27 18:55:33][0.00] Num validated clips to be used in TRAIN:  1751
+kab/LOG.kab.scratch
+[2018-11-29 06:00:05][0.00] Num validated clips to be used in DEV:  1357
+[2018-11-29 06:00:05][0.00] Num validated clips to be used in TEST:  1237
+[2018-11-29 06:00:05][0.00] Num validated clips to be used in TRAIN:  10633
+ky/LOG.ky.scratch
+[2018-11-26 22:32:31][0.00] Num validated clips to be used in DEV:  64
+[2018-11-26 22:32:31][0.00] Num validated clips to be used in TEST:  86
+[2018-11-26 22:32:31][0.00] Num validated clips to be used in TRAIN:  407
+sl/LOG.sl.scratch
+[2018-11-27 19:12:37][0.00] Num validated clips to be used in DEV:  77
+[2018-11-27 19:12:37][0.00] Num validated clips to be used in TEST:  23
+[2018-11-27 19:12:37][0.00] Num validated clips to be used in TRAIN:  248
+tr/LOG.tr.scratch
+[2018-11-27 03:28:00][0.00] Num validated clips to be used in DEV:  346
+[2018-11-27 03:28:00][0.00] Num validated clips to be used in TEST:  305
+[2018-11-27 03:28:00][0.00] Num validated clips to be used in TRAIN:  2504
+tt/LOG.tt.scratch
+[2018-11-27 01:40:56][0.00] Num validated clips to be used in DEV:  384
+[2018-11-27 01:40:56][0.00] Num validated clips to be used in TEST:  293
+[2018-11-27 01:40:56][0.00] Num validated clips to be used in TRAIN:  1474
