@@ -1,0 +1,1 @@
+These exps are from taking a trained model in the original language, and then tuning that model to the same languages training data again... we're interested in learning how much of transfer has to do with learning spelling vs. learning language things (phonotactics)

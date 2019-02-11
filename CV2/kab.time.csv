@@ -1,0 +1,17 @@
+,,,,
+,,,,
+,,KABYLE,STATS,
+,,,,
+,,,,
+,num_layers_from_english,num_epochs,avg_minutes_per_epoch,total_train_time_minutes
+,NONE,11,11.4712,126.1832
+frozen,5,10,3.31499,33.1499
+frozen,4,15,3.55888,53.3832
+frozen,3,8,10.98333,87.86664
+frozen,2,13,11.09743,144.26659
+frozen,1,9,11.16481,100.48329
+tuned,5,16,11.25103,180.01648
+tuned,4,9,11.23703,101.13327
+tuned,3,7,11.20952,78.46664
+tuned,2,8,11.32708,90.61664
+tuned,1,9,11.28147,101.53323
